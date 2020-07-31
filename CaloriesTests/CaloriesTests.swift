@@ -10,25 +10,21 @@ import XCTest
 @testable import Calories
 
 class CaloriesTests: XCTestCase {
+	let banana = FoodItem(name: "Banana", caloriesFor100Grams: 89, grams: 118)
+	let steak = FoodItem(name: "Steak", caloriesFor100Grams: 271, grams: 225)
+	let goatCheese = FoodItem(name: "Goat Cheese", caloriesFor100Grams: 364, grams: 28)
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testEmptyMeal() throws {
+		let meal = Meal()
+		XCTAssertEqual(meal.calories, 0, "An empty meal should have 0 calories")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+	
+	func testCalories() {
+		var meal = Meal()
+		meal.add(banana)
+		meal.add(steak)
+		meal.add(goatCheese)
+		XCTAssertEqual(meal.items.count, 3)
+		XCTAssertEqual(meal.calories, 534)
+	}
 }

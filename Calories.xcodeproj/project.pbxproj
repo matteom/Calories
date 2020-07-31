@@ -14,6 +14,7 @@
 		95773ACB24D1B6D1008CB6DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95773ACA24D1B6D1008CB6DD /* Preview Assets.xcassets */; };
 		95773ACE24D1B6D1008CB6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95773ACC24D1B6D1008CB6DD /* LaunchScreen.storyboard */; };
 		95773AD924D1B6D1008CB6DD /* CaloriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95773AD824D1B6D1008CB6DD /* CaloriesTests.swift */; };
+		95773AE424D1B6DF008CB6DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95773AE324D1B6DF008CB6DD /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		95773AD424D1B6D1008CB6DD /* CaloriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaloriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95773AD824D1B6D1008CB6DD /* CaloriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesTests.swift; sourceTree = "<group>"; };
 		95773ADA24D1B6D1008CB6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95773AE324D1B6DF008CB6DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				95773AC124D1B6D0008CB6DD /* AppDelegate.swift */,
 				95773AC324D1B6D0008CB6DD /* SceneDelegate.swift */,
 				95773AC524D1B6D0008CB6DD /* ContentView.swift */,
+				95773AE324D1B6DF008CB6DD /* Model.swift */,
 				95773AC724D1B6D1008CB6DD /* Assets.xcassets */,
 				95773ACC24D1B6D1008CB6DD /* LaunchScreen.storyboard */,
 				95773ACF24D1B6D1008CB6DD /* Info.plist */,
@@ -211,6 +214,7 @@
 				95773AC224D1B6D0008CB6DD /* AppDelegate.swift in Sources */,
 				95773AC424D1B6D0008CB6DD /* SceneDelegate.swift in Sources */,
 				95773AC624D1B6D0008CB6DD /* ContentView.swift in Sources */,
+				95773AE424D1B6DF008CB6DD /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
